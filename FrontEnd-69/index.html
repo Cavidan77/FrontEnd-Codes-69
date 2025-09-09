@@ -1,11 +1,311 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
-<body>
-    
+
+<body style="background-color: lightgray;">
+    <h1 class="display-1">List Items</h1>
+    <div class="container mt-3">
+        <ul class="list-group list-group-flush list-group-numbered">
+            <li class="list-group-item active">First Item</li>
+            <li class="list-group-item">Second Item</li>
+            <li class="list-group-item disabled ">Third Item</li>
+            <a href="#" class="list-group-item">Fourth Item</a>
+        </ul>
+    </div>
+    <br><br>
+    <div class="container mt-3">
+        <ul class="list-group list-group-numbered list-group-horizontal">
+            <li class="list-group-item">First Item</li>
+            <li class="list-group-item">Second Item</li>
+            <li class="list-group-item">Third Item</li>
+            <a href="#" class="list-group-item">Fourth Item</a>
+        </ul>
+    </div>
+    <br><br>
+    <div class="container mt-3">
+        <ul class="list-group">
+            <li class="list-group-item list-group-item-success list-group-item-action">First Item</li>
+            <li class="list-group-item list-group-item-warning list-group-item-action">Second Item</li>
+            <li class="list-group-item list-group-item-danger list-group-item-action">Third Item</li>
+            <li class="list-group-item list-group-item-primary list-group-item-action">Fourth Item</li>
+            <li class="list-group-item list-group-item-secondary list-group-item-action">Fifth Item</li>
+        </ul>
+    </div>
+    <br><br>
+    <div class="container">
+        <ul class="list-group">
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                Mails
+                <span class="badge bg-dark rounded-pill" style="color: white;">99+</span>
+            </li>
+
+        </ul>
+    </div>
+
+    <br><br>
+
+    <h1 class="display-1">Cards</h1>
+
+    <div class="container">
+        <div class="card">
+            <div class="card-header bg-primary"></div>
+            <div class="card-body bg-danger"></div>
+            <div class="card-footer bg-warming"></div>
+        </div>
+    </div>
+
+    <h1 class="display-1">DropDowns</h1>
+    <div class="container">
+        <div class="dropdown">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+                Dropdown
+            </button>
+            <ul class="dropdown-menu">
+                <li><a href="#" class="dropdown-item">Link 1</a></li>
+                <li><a href="#" class="dropdown-item">Link 2</a></li>
+                <li><a href="#" class="dropdown-item">Link 3</a></li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li><a href="#" class="dropdown-item">Link 1</a></li>
+            </ul>
+        </div>
+    </div>
+    <br><br>
+    <div class="container">
+        <div class="dropdown">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+                Dropdown button
+            </button>
+            <ul class="dropdown-menu">
+                <li>
+                    <h5 class="dropdown-header">Dropdown header 1</h5>
+                </li>
+                <li><a class="dropdown-item disabled" href="#">Link 1</a></li>
+                <li><a class="dropdown-item" href="#">Link 2</a></li>
+                <li><a class="dropdown-item active" href="#">Link 3</a></li>
+                <li>
+                    <h5 class="dropdown-header">Dropdown header 2</h5>
+                </li>
+                <li><a class="dropdown-item" href="#">Link 1</a></li>
+            </ul>
+        </div>
+    </div>
+    <br><br>
+    <div class="container">
+        <div class="dropdown dropend">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+                Dropdown
+            </button>
+            <ul class="dropdown-menu">
+                <li><a href="#" class="dropdown-item">Link 1</a></li>
+                <li><a href="#" class="dropdown-item">Link 2</a></li>
+                <li><a href="#" class="dropdown-item">Link 3</a></li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li><a href="#" class="dropdown-item">Link 1</a></li>
+            </ul>
+        </div>
+    </div>
+    <br><br>
+    <div class="container">
+        <div class="dropdown dropstart">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+                Dropdown
+            </button>
+            <ul class="dropdown-menu">
+                <li><a href="#" class="dropdown-item">Link 1</a></li>
+                <li><a href="#" class="dropdown-item">Link 2</a></li>
+                <li><a href="#" class="dropdown-item">Link 3</a></li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li><a href="#" class="dropdown-item">Link 1</a></li>
+            </ul>
+        </div>
+    </div>
+    <br><br>
+    <div class="container">
+        <div class="dropdown dropup">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+                Dropdown
+            </button>
+            <ul class="dropdown-menu">
+                <li><a href="#" class="dropdown-item">Link 1</a></li>
+                <li><a href="#" class="dropdown-item">Link 2</a></li>
+                <li><a href="#" class="dropdown-item">Link 3</a></li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li><a href="#" class="dropdown-item">Link 1</a></li>
+            </ul>
+        </div>
+    </div>
+    <br><br>
+    <div class="container">
+        <div class="dropdown">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+                Dropdown
+            </button>
+            <ul class="dropdown-menu">
+                <li><a href="#" class="dropdown-item">Link 1</a></li>
+                <li><a href="#" class="dropdown-item">Link 2</a></li>
+                <li><a href="#" class="dropdown-item">Link 3</a></li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li><a href="#" class="dropdown-item">Link 1</a></li>
+                <li class="dropdown-item-text">Yazi</li>
+            </ul>
+        </div>
+    </div>
+    <br><br>
+    <div class="container">
+        <div class="btn-group-vertical">
+            <button type="button" class="btn btn-primary">asd</button>
+            <button type="button" class="btn btn-primary">asd</button>
+            <div class="btn-group">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">asd</button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">asd</a></li>
+                    <li><a class="dropdown-item" href="#">asd</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <h1 class="display-1">Collapse</h1>
+
+    <div class="container mt-3">
+        <button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#demo">Simple
+            collapsible</button>
+        <div id="demo" class="collapse">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </div>
+    </div>
+    <br><br>
+    <div id="accordion">
+
+        <div class="card">
+            <div class="card-header">
+                <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+                    asd
+                </a>
+            </div>
+            <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+                <div class="card-body">
+                    asd
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo">
+                    asd
+                </a>
+            </div>
+            <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+                <div class="card-body">
+                    asd
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
+                    asd
+                </a>
+            </div>
+            <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+                <div class="card-body">
+                    asd
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <h1 class="display-1">Navs</h1>
+
+    <div class="container mt-3">
+
+        <ul class="nav nav-pills nav-justified">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Active</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+        </ul><br>
+
+
+        <ul class="nav nav-tabs nav-justified">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Active</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+        </ul>
+    </div>
+    <br><br>
+    <div class="container mt-3">
+
+        <br>
+
+        <ul class="nav nav-pills" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" data-bs-toggle="pill" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="pill" href="#menu1">Menu 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="pill" href="#menu2">Menu 2</a>
+            </li>
+        </ul>
+
+
+        <div class="tab-content">
+            <div id="home" class="container tab-pane active"><br>
+                <h3>HOME</h3>
+]
+            </div>
+            <div id="menu1" class="container tab-pane fade"><br>
+                <h3>Menu 1</h3>
+
+            </div>
+            <div id="menu2" class="container tab-pane fade"><br>
+                <h3>Menu 2</h3>
+
+            </div>
+        </div>
+    </div>
+
 </body>
+
 </html>
